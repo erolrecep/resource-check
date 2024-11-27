@@ -6,10 +6,12 @@ In the HPC systems, you need some scripts or tools to check system resources. Fo
 	├── README.md
 	├── tf_check
 	│   ├── if_tf_installed.py
-	│   └── if_tf_installed_and_available_ram.py
+	│   ├── if_tf_installed_and_available_ram.py
+	│   └── if_tf_installed_and_available_ram.slurm
 	└── torch_check
 	    ├── if_torch_installed.py
-	    └── if_torch_installed_and_available_ram.py
+	    ├── if_torch_installed_and_available_ram.py
+	    └── if_torch_installed_and_available_ram.slurm
 
 
 I checked these scripts on Linux-based OS's and MacOS systems. Expected outputs are as follow;
@@ -44,4 +46,17 @@ TensorFlow is installed. Version: 2.17.0
 Available devices with memory:
 - CPU: 62.63 GB RAM
 - NVIDIA GeForce RTX 2080 Ti: 11264.0 MiB VRAM
+```
+
+
+In case you submit SLURM jobs in an HPC system
+```bash
+sbatch tf_check/if_tf_installed_and_available_ram.slurm
+```
+
+or
+
+
+```bash
+sbatch torch_check/if_torch_installed_and_available_ram.slurm
 ```
