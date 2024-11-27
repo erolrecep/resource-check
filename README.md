@@ -27,3 +27,10 @@ Available devices with memory:
 - Apple MPS (Metal Performance Shaders): 36.00 GB RAM
 ```
 
+```bash
+(venv) $ python tf_check/if_tf_installed_and_available_ram.py
+TensorFlow is installed. Version: 2.17.0
+Available devices with memory:
+- CPU: 62.63 GB RAM
+- NVIDIA GeForce RTX 2080 Ti: 11264.0 MiB VRAM
+```
