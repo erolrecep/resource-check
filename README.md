@@ -15,15 +15,15 @@ In the HPC systems, you need some scripts or tools to check system resources. Fo
 I checked these scripts on Linux-based OS's and MacOS systems. Expected outputs are as follow;
 
 	```bash
-	(venv) $ python torch_check/if_torch_installed.py
-	PyTorch is installed. Version: 2.5.1
+		(venv) $ python torch_check/if_torch_installed.py
+		PyTorch is installed. Version: 2.5.1
 	```
 
 	```bash
-	(venv) $ python torch_check/if_torch_installed_and_available_ram.py
-	PyTorch is installed. Version: 2.5.1
-	Available devices with memory:
-	- CPU: 36.00 GB RAM
-	- Apple MPS (Metal Performance Shaders): 36.00 GB RAM
+		(venv) $ python torch_check/if_torch_installed_and_available_ram.py
+		PyTorch is installed. Version: 2.5.1
+		Available devices with memory:
+		- CPU: 36.00 GB RAM
+		- Apple MPS (Metal Performance Shaders): 36.00 GB RAM
 	```
 
