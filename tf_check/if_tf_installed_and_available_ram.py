@@ -4,6 +4,7 @@
 # import required libraries
 import psutil
 import subprocess
+import tensorflow as tf
 
 
 def get_gpu_memory_from_nvidia_smi():
@@ -40,7 +41,6 @@ def list_devices_with_memory_tf():
 def main():
 
     try:
-        import tensorflow as tf
         print(f"TensorFlow is installed. Version: {tf.__version__}")
         devices = list_devices_with_memory_tf()
         print("Available devices with memory:")
