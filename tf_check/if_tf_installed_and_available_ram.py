@@ -25,7 +25,7 @@ def list_devices_with_memory_tf():
     gpu_memory_info = get_gpu_memory_from_nvidia_smi()
     if gpu_memory_info:
         for gpu_name, memory in gpu_memory_info:
-            devices.append(f"{gpu_name}: {float(memory):.2f} GB VRAM")
+            devices.append(f"{gpu_name}: {float(memory)} MiB VRAM")
     elif tf.config.list_physical_devices('GPU'):
         devices.append("GPU detected, but memory details unavailable.")
     
